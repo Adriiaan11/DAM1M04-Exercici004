@@ -1,0 +1,22 @@
+/* 1. Variables ------------------------------------------------------------ */
+:root {
+  --fons: #fbfbfa;
+  --fons-calid: #f7f5f0;
+  --fons-franja: #f2f1ed;
+  --tinta: #26262c;
+  --tinta-suau: #5d5d66;
+  --tinta-apagada: #84848c;
+  --linia: #e4e3df;
+  --fosc: #1a1a1f;
+  --nit: #0e1015;
+  --verd: #5db07a;
+  --blau: #3d7bd8;
+  --lila: #9b3fe0;
+  --groc: #e5c13a;
+  --degradat: linear-gradient(90deg, #5db07a 0%, #3d86d6 55%, #9b4fe3 100%);
+  --degradat-text: linear-gradient(90deg, #5cb08c 0%, #3d7bd8 55%, #9a4fe0 100%);
+  --font-principal: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --amplada-contenidor: 1136px;
+  --alcada-capcalera: 66px;
+}
