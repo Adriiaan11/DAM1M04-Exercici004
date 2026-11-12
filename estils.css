@@ -294,3 +294,52 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
   .hero-graph { display: none !important; }
 }
+
+/* 6. Plataforma ------------------------------------------------------------- */
+.plataforma { padding-top: 148px; padding-bottom: 120px; }
+.plataforma .titol { margin-bottom: 32px; }
+
+.fila-targetes { display: flex; gap: 18px; }
+.targeta-superficie {
+  flex: 1;
+  min-height: 276px;
+  padding: 36px 36px 32px;
+  border: 1px solid;
+  border-radius: 16px;
+}
+.targeta-superficie h3 { margin-bottom: 18px; font-size: 26px; font-weight: 500; letter-spacing: -0.02em; }
+.targeta-superficie h3 span, .franja-core h3 span { font-weight: 300; color: var(--tinta-apagada); }
+.targeta-superficie p { font-size: 15px; line-height: 1.6; color: var(--tinta-suau); }
+
+.targeta-superficie--atlas { background: linear-gradient(#e9f2ea, #fbfbfa 70%); border-color: #bfdcc9; }
+.targeta-superficie--nexus { background: linear-gradient(#e6ebf8, #fbfbfa 70%); border-color: #bccbee; }
+.targeta-superficie--canvas { background: linear-gradient(#f3e5f4, #fbfbfa 70%); border-color: #dcbfe4; }
+
+.targeta-superficie:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(20, 20, 30, .15);
+
+}
+
+.franja-core {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-top: 20px;
+  padding: 30px 28px;
+  background: #f3f3f1;
+  border: 1px solid var(--linia);
+  border-radius: 16px;
+  position: relative;
+}
+.franja-core::before {
+  content: "";
+  position: absolute;
+  left: 24px; right: 24px; top: -10px;
+  height: 10px;
+  border: 1px dashed #dcdcd8;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+}
+.franja-core h3 { flex: 0 0 220px; font-size: 24px; font-weight: 500; letter-spacing: -0.02em; }
+.franja-core p { flex: 1; max-width: 640px; font-size: 15.5px; line-height: 1.6; color: var(--tinta-suau); }
