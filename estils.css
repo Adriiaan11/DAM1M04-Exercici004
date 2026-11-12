@@ -315,6 +315,10 @@ a { color: inherit; text-decoration: none; }
 .targeta-superficie--nexus { background: linear-gradient(#e6ebf8, #fbfbfa 70%); border-color: #bccbee; }
 .targeta-superficie--canvas { background: linear-gradient(#f3e5f4, #fbfbfa 70%); border-color: #dcbfe4; }
 
+.targeta-superficie {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .targeta-superficie:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(20, 20, 30, .15);
