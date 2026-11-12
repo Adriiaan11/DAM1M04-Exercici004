@@ -489,3 +489,48 @@ a { color: inherit; text-decoration: none; }
 .targeta-dades dl { margin-top: 18px; }
 .targeta-dades dt { font-size: 14px; color: #c9ccd4; }
 .targeta-dades dd { font-size: 22px; font-weight: 400; color: #fff; }
+
+/* 10. Fluxos de treball ----------------------------------------------------------- */
+.fluxos { background: var(--fons-calid); padding-top: 112px; padding-bottom: 140px; }
+.fluxos .titol { margin-bottom: 0; }
+.fluxos .subtitol { max-width: 700px; margin-top: 30px; font-size: 24px; }
+
+.fluxos-llista { margin-top: 56px; border-top: 1px solid var(--linia); }
+.fluxos-llista li { border-bottom: 1px solid var(--linia); }
+.fluxos-fila {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px 0;
+  transition: background-color .25s, padding .25s;
+}
+.etiqueta-wf {
+  display: inline-block;
+  padding: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a2653a;
+  background: #fbe9d7;
+  border: 1px solid #f1d5b8;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.fluxos-col-etiqueta { flex: 0 0 208px; }
+.fluxos-cos { flex: 1; max-width: 620px; }
+.fluxos-cos h3 { font-size: 22px; font-weight: 400; letter-spacing: -0.02em; }
+.fluxos-cos p { margin-top: 10px; font-size: 16px; line-height: 1.55; color: var(--tinta-suau); }
+.fluxos-fletxa {
+  align-self: center;
+  margin-left: auto;
+  font-size: 22px;
+  color: var(--tinta-apagada);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity .25s, transform .25s;
+}
+
+.fluxos-fila:hover, .fluxos-fila:focus-visible { background: rgba(0, 0, 0, .025); padding-left: 16px; }
+.fluxos-fila:hover .fluxos-fletxa, .fluxos-fila:focus-visible .fluxos-fletxa { opacity: 1; transform: none; }
