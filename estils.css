@@ -764,4 +764,30 @@ a { color: inherit; text-decoration: none; }
   .fluxos-col-etiqueta { flex: none; }
   .fluxos-fletxa { display: none; }
 
+    .atlas { padding: 72px 0; }
+  .atlas-captura { height: 320px; margin-top: 36px; }
+  .atlas-captura > img { width: 190%; max-width: none; }
+  .passos { flex-direction: column; gap: 24px; margin-top: 40px; }
+  .passos li { flex: none; }
+  .passos p { max-width: none; }
+  .atlas-intro { margin-top: 40px; font-size: 18px; }
+  .nodes { flex-direction: column; }
+  .targeta-node { width: 100%; flex: none; }
+
+  .governanca { padding: 24px 0 72px; }
+  .targetes-gov { flex-direction: column; }
+  .targeta-gov { flex: none; width: 100%; padding: 26px 24px; }
+  .targeta-gov p { max-width: none; }
+  .passos-execucio { flex-direction: column; gap: 20px; }
+  .pas-num::after { margin-right: 0; }
+  .garanties { text-align: left; }
+
+  .comenca { padding: 72px 0 48px; }
+  .confianca { flex-direction: column; margin-top: 64px; }
+  .confianca li { padding: 20px 0; border-left: 0; border-top: 1px solid var(--linia); }
+  .confianca li:first-child { border-top: 0; padding-top: 0; }
+
+  .peu-interior { flex-direction: column; align-items: flex-start; }
+  .peu-pagina nav ul { flex-wrap: wrap; gap: 8px 20px; }
+  .drets { text-align: left; }
 }
