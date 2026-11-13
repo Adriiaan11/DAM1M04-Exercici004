@@ -791,3 +791,14 @@ a { color: inherit; text-decoration: none; }
   .peu-pagina nav ul { flex-wrap: wrap; gap: 8px 20px; }
   .drets { text-align: left; }
 }
+
+@media (max-width: 400px) {
+  .hero h1 { font-size: 40px; }
+  .titol--gran { font-size: 36px; }
+  .boto { padding: 0 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
