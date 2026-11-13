@@ -757,4 +757,11 @@ a { color: inherit; text-decoration: none; }
   .camp { padding: 72px 0; }
   .xifra-gran { font-size: 76px; }
   .camp-text { font-size: 16px; }
+
+  .fluxos { padding: 72px 0; }
+  .fluxos-llista { margin-top: 36px; }
+  .fluxos-fila { flex-direction: column; gap: 14px; padding: 24px 0; }
+  .fluxos-col-etiqueta { flex: none; }
+  .fluxos-fletxa { display: none; }
+
 }
