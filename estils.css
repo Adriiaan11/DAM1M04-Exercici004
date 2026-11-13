@@ -534,3 +534,66 @@ a { color: inherit; text-decoration: none; }
 
 .fluxos-fila:hover, .fluxos-fila:focus-visible { background: rgba(0, 0, 0, .025); padding-left: 16px; }
 .fluxos-fila:hover .fluxos-fletxa, .fluxos-fila:focus-visible .fluxos-fletxa { opacity: 1; transform: none; }
+
+/* 11. Atlas --------------------------------------------------------------- */
+.atlas { padding-top: 152px; padding-bottom: 170px; }
+.atlas .subtitol { margin-top: 36px; max-width: 900px; font-size: 24px; }
+
+.atlas-captura { margin-top: 56px; height: 740px; overflow: hidden; border-radius: 16px; }
+.atlas-captura > img { width: 100%; border-radius: 15px; }
+
+.passos { display: flex; gap: 36px; margin-top: 62px; }
+.passos li { flex: 1; padding-top: 22px; border-top: 2px solid var(--fosc); }
+.passos h3 { font-size: 26px; font-weight: 500; letter-spacing: -0.02em; }
+.passos p { margin-top: 12px; max-width: 240px; font-size: 16px; line-height: 1.5; color: var(--tinta-suau); }
+
+.atlas-intro { max-width: 640px; margin-top: 60px; font-size: 20px; line-height: 1.45; }
+
+.atlas-demo { display: flex; align-items: flex-start; justify-content: space-between; gap: 48px; margin-top: 56px; }
+.col-consulta { flex: 0 0 621px; max-width: 100%; }
+.caixa-consulta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px 12px 18px;
+  background: #fff;
+  border: 1px solid #cfcfd4;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+.caixa-consulta img { opacity: .55; flex: none; }
+.text-consulta { flex: 1; min-width: 0; font-size: 16px; }
+.cursor { display: inline-block; width: 2px; height: 18px; margin-left: 1px; vertical-align: -3px; background: var(--tinta); }
+
+.col-nodes { flex: 0 1 460px; }
+.col-nodes .etiqueta-mono { display: block; margin-bottom: 12px; }
+.nodes { display: flex; gap: 10px; align-items: flex-start; }
+.targeta-node {
+  flex: 1;
+  padding: 16px 16px 14px;
+  background: #fff;
+  border: 1px solid #a9d3b6;
+  border-radius: 12px;
+}
+.node-etiqueta {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--tinta-suau);
+}
+.node-etiqueta .punt { margin-top: 3px; flex: none; }
+.node-text { margin-top: 12px; font-size: 15px; line-height: 1.45; }
+.node-confirmat { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 13px; color: #2f7d47; }
+.node-confirmat img { flex: none; }
+
+.targeta-node {
+  transition: transform 0.3s ease;
+}
+
+.targeta-node:hover {
+  transform: translateY(-1px);
+}
