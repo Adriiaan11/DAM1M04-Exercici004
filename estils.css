@@ -647,3 +647,10 @@ a { color: inherit; text-decoration: none; }
   border-radius: 2px;
   background: var(--linia);
 }
+
+.pas-execucio--1 .pas-num::after { background: linear-gradient(90deg, #e5c13a, #5db07a); }
+.pas-execucio--2 .pas-num::after { background: linear-gradient(90deg, #5db07a, #3d9be6); }
+.pas-execucio--3 .pas-num::after { background: linear-gradient(90deg, #3d9be6, #8e2fd8); }
+.pas-execucio--4 .pas-num::after { background: linear-gradient(90deg, #8e2fd8, rgba(142, 47, 216, 0)); }
+.pas-execucio h3 { margin-top: 16px; font-size: 16px; font-weight: 500; }
+.pas-execucio p { margin-top: 6px; font-size: 13px; color: var(--tinta-suau); }
