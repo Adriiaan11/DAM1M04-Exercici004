@@ -718,3 +718,43 @@ a { color: inherit; text-decoration: none; }
   .passos { flex-wrap: wrap; gap: 28px; }
   .passos li { flex: 1 1 calc(50% - 28px); }
 }
+
+@media (max-width: 767px) {
+  :root { --alcada-capcalera: 108px; }
+  .seccio { padding: 72px 0; }
+  .titol { font-size: 32px; }
+  .titol--gran { font-size: 42px; }
+  .subtitol, .hero .introduccio, .franja-subtitol, .comenca .subtitol, .atlas .subtitol, .fluxos .subtitol { font-size: 19px; }
+  .capcalera-pagina { height: auto; }
+  .capcalera-interior { flex-wrap: wrap; height: auto; padding: 10px 0 6px; row-gap: 4px; }
+  .marca { flex: 1 1 auto; order: 1; }
+  .capcalera-accions { flex: 0 0 auto; order: 2; }
+  .navegacio-principal { order: 3; flex: 1 1 100%; }
+  .navegacio-principal ul { justify-content: center; }
+
+  .hero { padding-top: 56px; }
+  .hero h1 { font-size: 44px; letter-spacing: -0.04em; }
+  .hero-simbol { width: 44px; }
+  .hero-captura { margin-top: 56px; height: 260px; border-radius: 12px 12px 0 0; }
+  .hero-captura > img { width: 170%; max-width: none; }
+
+  .plataforma { padding-top: 72px; padding-bottom: 72px; }
+  .fila-targetes, .franja-core { flex-direction: column; }
+  .targeta-superficie { flex: none; width: 100%; padding: 28px 24px; }
+  .franja-core { align-items: flex-start; gap: 12px; padding: 24px; }
+  .franja-core h3 { flex: none; }
+
+  .franja { padding: 64px 0; }
+  .franja-titol { font-size: 24px; }
+
+  .valor .titol { font-size: 30px; }
+  .valor-interior { padding: 22px 20px 26px; }
+  .valor-capcalera, .metriques { flex-direction: column; gap: 8px; }
+  .metriques { gap: 32px; }
+  .metrica-xifra { font-size: 56px; }
+  .metrica-xifra .unitat { font-size: 28px; }
+
+  .camp { padding: 72px 0; }
+  .xifra-gran { font-size: 76px; }
+  .camp-text { font-size: 16px; }
+}
