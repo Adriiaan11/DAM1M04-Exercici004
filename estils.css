@@ -697,3 +697,108 @@ a { color: inherit; text-decoration: none; }
 .peu-pagina nav a:hover { color: #fff; }
 .drets { flex: 1; text-align: right; font-size: 13.5px; }
 .peu-marca:hover { color: #fff; }
+
+/* 15. Adaptació a mòbil ---------------------------------------------------------- */
+@media (max-width: 1100px) {
+  .hero h1 { font-size: 68px; }
+  .titol--gran { font-size: 60px; }
+  .xifra-gran { font-size: 104px; }
+  .pastilla-esdeveniment { display: none; }
+  .col-consulta { flex-basis: 50%; }
+}
+
+@media (max-width: 900px) {
+  .camp-interior, .atlas-demo { flex-direction: column; gap: 40px; }
+  .targeta-dades { flex: none; width: 100%; margin-top: 0; }
+  .col-consulta, .col-nodes { flex: none; width: 100%; }
+  .fila-targetes { flex-wrap: wrap; }
+  .targeta-superficie { flex: 1 1 calc(50% - 18px); min-height: 0; }
+  .targetes-gov { flex-wrap: wrap; }
+  .targeta-gov { flex: 1 1 calc(50% - 16px); min-height: 0; }
+  .passos { flex-wrap: wrap; gap: 28px; }
+  .passos li { flex: 1 1 calc(50% - 28px); }
+}
+
+@media (max-width: 767px) {
+  :root { --alcada-capcalera: 108px; }
+  .seccio { padding: 72px 0; }
+  .titol { font-size: 32px; }
+  .titol--gran { font-size: 42px; }
+  .subtitol, .hero .introduccio, .franja-subtitol, .comenca .subtitol, .atlas .subtitol, .fluxos .subtitol { font-size: 19px; }
+  .capcalera-pagina { height: auto; }
+  .capcalera-interior { flex-wrap: wrap; height: auto; padding: 10px 0 6px; row-gap: 4px; }
+  .marca { flex: 1 1 auto; order: 1; }
+  .capcalera-accions { flex: 0 0 auto; order: 2; }
+  .navegacio-principal { order: 3; flex: 1 1 100%; }
+  .navegacio-principal ul { justify-content: center; }
+
+  .hero { padding-top: 56px; }
+  .hero h1 { font-size: 44px; letter-spacing: -0.04em; }
+  .hero-simbol { width: 44px; }
+  .hero-captura { margin-top: 56px; height: 260px; border-radius: 12px 12px 0 0; }
+  .hero-captura > img { width: 170%; max-width: none; }
+
+  .plataforma { padding-top: 72px; padding-bottom: 72px; }
+  .fila-targetes, .franja-core { flex-direction: column; }
+  .targeta-superficie { flex: none; width: 100%; padding: 28px 24px; }
+  .franja-core { align-items: flex-start; gap: 12px; padding: 24px; }
+  .franja-core h3 { flex: none; }
+
+  .franja { padding: 64px 0; }
+  .franja-titol { font-size: 24px; }
+
+  .valor .titol { font-size: 30px; }
+  .valor-interior { padding: 22px 20px 26px; }
+  .valor-capcalera, .metriques { flex-direction: column; gap: 8px; }
+  .metriques { gap: 32px; }
+  .metrica-xifra { font-size: 56px; }
+  .metrica-xifra .unitat { font-size: 28px; }
+
+  .camp { padding: 72px 0; }
+  .xifra-gran { font-size: 76px; }
+  .camp-text { font-size: 16px; }
+
+  .fluxos { padding: 72px 0; }
+  .fluxos-llista { margin-top: 36px; }
+  .fluxos-fila { flex-direction: column; gap: 14px; padding: 24px 0; }
+  .fluxos-col-etiqueta { flex: none; }
+  .fluxos-fletxa { display: none; }
+
+    .atlas { padding: 72px 0; }
+  .atlas-captura { height: 320px; margin-top: 36px; }
+  .atlas-captura > img { width: 190%; max-width: none; }
+  .passos { flex-direction: column; gap: 24px; margin-top: 40px; }
+  .passos li { flex: none; }
+  .passos p { max-width: none; }
+  .atlas-intro { margin-top: 40px; font-size: 18px; }
+  .nodes { flex-direction: column; }
+  .targeta-node { width: 100%; flex: none; }
+
+  .governanca { padding: 24px 0 72px; }
+  .targetes-gov { flex-direction: column; }
+  .targeta-gov { flex: none; width: 100%; padding: 26px 24px; }
+  .targeta-gov p { max-width: none; }
+  .passos-execucio { flex-direction: column; gap: 20px; }
+  .pas-num::after { margin-right: 0; }
+  .garanties { text-align: left; }
+
+  .comenca { padding: 72px 0 48px; }
+  .confianca { flex-direction: column; margin-top: 64px; }
+  .confianca li { padding: 20px 0; border-left: 0; border-top: 1px solid var(--linia); }
+  .confianca li:first-child { border-top: 0; padding-top: 0; }
+
+  .peu-interior { flex-direction: column; align-items: flex-start; }
+  .peu-pagina nav ul { flex-wrap: wrap; gap: 8px 20px; }
+  .drets { text-align: left; }
+}
+
+@media (max-width: 400px) {
+  .hero h1 { font-size: 40px; }
+  .titol--gran { font-size: 36px; }
+  .boto { padding: 0 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
