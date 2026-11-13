@@ -685,3 +685,15 @@ a { color: inherit; text-decoration: none; }
 .confianca .mini-barra { width: 28px; height: 5px; margin-bottom: 18px; }
 .confianca .etiqueta-mono { font-size: 10.5px; }
 .confianca-text { margin-top: 12px; font-size: 17px; font-weight: 500; letter-spacing: -0.01em; }
+
+/* 14. Peu ----------------------------------------------------------------- */
+.peu-pagina { padding: 48px 0; background: #17181d; color: #a3a6ae; }
+.peu-interior { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.peu-marca { flex: 1; display: flex; align-items: center; gap: 8px; color: #e9e9ec; }
+.peu-marca img { width: 24px; height: auto; }
+.peu-marca span { font-size: 15px; font-weight: 300; letter-spacing: 0.28em; }
+.peu-pagina nav ul { display: flex; gap: 24px; }
+.peu-pagina nav a { padding: 4px 0; font-size: 13.5px; color: #a3a6ae; transition: color .2s; }
+.peu-pagina nav a:hover { color: #fff; }
+.drets { flex: 1; text-align: right; font-size: 13.5px; }
+.peu-marca:hover { color: #fff; }
